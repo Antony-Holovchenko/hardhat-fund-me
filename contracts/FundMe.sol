@@ -15,6 +15,7 @@ error FundMe__NotOwner();
  * @dev This implements price feeds as out library
  */
 contract FundMe {
+    // Type Declarations
     using PriceConverter for uint256;
 
     //State variables
@@ -25,7 +26,7 @@ contract FundMe {
     
     AggregatorV3Interface private s_priceFeed; // This is our global variable
 
-
+    // Modifiers
     modifier onlyOwner() {
         //require(msg.sender == i_owner , "Sender is not owner!");
         if (msg.sender != i_owner) {
@@ -39,7 +40,7 @@ contract FundMe {
         i_owner = msg.sender;
     }
 
-
+    /// @notice Funds our contract based on the ETH/USD price
     function fund() public payable {
         require(
             msg.value.getConversionRate(s_priceFeed) >= MINIMUM_USD,
@@ -77,6 +78,11 @@ contract FundMe {
         require(success); 
     }
 
+
+     /** @notice Gets the amount that an address has funded
+     *  @param fundingAddress the address of the funder
+     *  @return the amount funded
+     */
     function getAddressToAmountFunded(address fundingAddress)
         public
         view
