@@ -1,4 +1,4 @@
-
+<a name="readme-top"></a>
 <h3 align="center">Hardhat Fund Me</h3>
 
   <p align="center">
@@ -31,7 +31,7 @@ The project comes with a sample contract, a test for this contract and a sample 
 that deploys that contract. It also comes with a variety of other tools, preconfigured 
 to work with the project code.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 <!-- GETTING STARTED -->
 # Getting Started
@@ -65,7 +65,7 @@ To get a local copy up and running follow these simple example steps.
    npm install
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 
 
@@ -90,7 +90,7 @@ npx hardhat coverage
 ```
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 # Deployment to a testnet or mainnet
 
@@ -115,7 +115,7 @@ Below are the links where you can get some tesnet ETH. You should see the ETH sh
 npx hardhat deploy --network goerly
 ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 ## Scripts
 
@@ -169,4 +169,4 @@ npx hardhat verify --constructor-args arguments.js DEPLOYED_CONTRACT_ADDRESS
 - [Telegram](https://t.me/an_TON_h)
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
